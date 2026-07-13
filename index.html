@@ -116,6 +116,10 @@
 
   /* deliverables: two partnership tiers */
   .tiers{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px,3.6vw,56px); margin-top:clamp(22px,2.8vw,36px); }
+  .tiers-3{ grid-template-columns:repeat(3,1fr); gap:clamp(18px,2.4vw,38px); }
+  .tiers-3 .tname{ font-size:clamp(16px,1.55vw,21px); }
+  .tiers-3 .tcond{ font-size:clamp(12px,1.05vw,14px); }
+  .tiers-3 li{ font-size:clamp(12.5px,1.05vw,14.5px); }
   .tier .th{ border-top:1.5px solid var(--figma); padding-top:clamp(12px,1.4vw,16px); }
   .tier .tname{ font-family:var(--sans); font-weight:500; font-size:clamp(18px,1.75vw,23px); color:var(--canvas); letter-spacing:-.01em; }
   .tier .tcond{ font-family:var(--sans); font-weight:400; font-size:clamp(12.5px,1.1vw,14.5px); color:var(--figma); margin-top:5px; }
@@ -349,10 +353,10 @@
     <div class="inner reveal">
       <div class="eyebrow">The ask</div>
       <h2>What we're <span class="it">asking.</span></h2>
-      <p class="lead">We're looking for two forms of support, and ideally both together. We'd shape the exact fit on a short call.</p>
+      <p class="lead">We're looking for two forms of support, and we'd shape the exact fit on a short call.</p>
       <div class="duo">
         <div class="blk"><div class="lbl">Who's already in</div><div class="txt">We have <span class="fig">Watermelon, Remote, Helloprint and Wispr Flow</span> on board. We'd love Figma in the mix, because from first concept to final handover, Figma is the thread that ties the whole thing together.</div></div>
-        <div class="blk"><div class="lbl">What we're looking for</div><div class="txt">Two forms of support: <span class="fig">Figma product access</span> for the team through the build and handover, and a <span class="fig">financial contribution</span> toward the production, technology and documentation. Ideally both, as one partnership. The next page breaks down what that includes.</div></div>
+        <div class="blk"><div class="lbl">What we're looking for</div><div class="txt">Two forms of support: <span class="fig">Figma product access</span> for the team through the build and handover, and a <span class="fig">sponsorship of the journey</span> toward the production, technology and documentation. The next page breaks the sponsorship into three tiers.</div></div>
       </div>
     </div>
   </section>
@@ -360,33 +364,41 @@
   <!-- 8 · DELIVERABLES -->
   <section class="slide dark figma">
     <div class="mark"><svg viewBox="0 0 970.79 511.74"><use href="#logomark"/></svg><span>back to being</span></div>
-    <div class="inner reveal">
+    <div class="inner reveal" style="max-width:1080px;">
       <div class="eyebrow">The proposal</div>
-      <h2 class="lg">What each level <span class="it">unlocks.</span></h2>
-      <p class="lead">The partnership we'd love is both together: Figma access and financial support behind the walk. Access on its own is a lighter way in, if that's the faster route.</p>
-      <div class="tiers">
-        <div class="tier muted">
+      <h2 class="lg">Three ways to come <span class="it">in.</span></h2>
+      <p class="lead" style="max-width:62ch;">A sponsorship of the journey, in three tiers. On top of any of them, Figma product access for the team through the build and the handover. We'd shape the exact fit together on a call.</p>
+      <div class="tiers tiers-3">
+        <div class="tier">
           <div class="th">
-            <div class="tname">Design partner</div>
-            <div class="tcond">with Figma access</div>
+            <div class="tname">The foundation</div>
+            <div class="tcond">the core sponsorship</div>
           </div>
           <ul>
-            <li>Real, <b>on-screen use of Figma</b> throughout the build and the handover.</li>
-            <li>A <b>behind-the-scenes piece</b> on designing and transferring a whole product in Figma, made under conditions no design team works in.</li>
-            <li>Credit as our <b>design partner</b> on the project page.</li>
-            <li>Natural mentions wherever Figma is part of how we build.</li>
+            <li><b>Category exclusivity</b> as the only design tool in the story.</li>
+            <li>Genuine <b>on-screen use of Figma</b> across the build and the handover.</li>
+            <li>A <b>behind-the-scenes piece</b> walking through the real Figma file: the design system and the flows.</li>
+            <li>Your <b>logo across website, socials</b> and sponsor touchpoints, and a dedicated announcement post.</li>
           </ul>
         </div>
         <div class="tier">
           <div class="th">
-            <div class="tname">Journey partner <span class="pref">our preference</span></div>
-            <div class="tcond">Figma access + financial support</div>
+            <div class="tname">The room</div>
+            <div class="tcond">plus a stage</div>
           </div>
           <ul>
-            <li class="plus">Everything in Design partner, plus:</li>
-            <li>Official <b>sponsor credit in the documentary</b>, around 15 minutes, for as long as it stays online.</li>
-            <li>Your <b>logo on every sponsor touchpoint</b>: website, socials, and a dedicated announcement post.</li>
-            <li>A <b>talk or session for Figma's community</b> on designing and handing over a product built this way.</li>
+            <li class="plus">Everything in The foundation, plus:</li>
+            <li>A <b>talk or session for Figma's community</b>: a building-in-public, design-minded audience, and talk content your team can reuse afterwards.</li>
+          </ul>
+        </div>
+        <div class="tier">
+          <div class="th">
+            <div class="tname">The film</div>
+            <div class="tcond">plus a documentary</div>
+          </div>
+          <ul>
+            <li class="plus">Everything in The room, plus:</li>
+            <li>A <b>branded mini-documentary centered on Figma</b>: not Figma behind a desk, but Figma out on the Camino, the file as the source of truth and the handover that lets MIND keep building.</li>
           </ul>
         </div>
       </div>
